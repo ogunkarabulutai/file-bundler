@@ -65,13 +65,12 @@ const AgentEmlakSection = () => {
             <div className="absolute -top-4 left-4 z-10">
               <span className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs font-mono uppercase tracking-wider px-4 py-2 rounded-full">AI Video</span>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-card/50 flex items-center justify-center bg-black">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-card/50 inline-flex">
               <video
                 src={agentEmlakVideo}
                 controls
                 playsInline
-                className="w-auto h-auto max-h-[500px] rounded-2xl"
-                style={{ aspectRatio: '9/16' }}
+                className="block max-h-[500px] rounded-2xl"
               />
             </div>
           </div>
