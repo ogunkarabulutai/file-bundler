@@ -1,5 +1,6 @@
 import React from 'react';
 import { Video, Clock, TrendingUp, Eye, Building2, Image } from 'lucide-react';
+import agentEmlakVideo from '@/assets/agent-emlak-tanitim.mp4';
 
 const AgentEmlakSection = () => {
   const beforeImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop";
@@ -64,14 +65,14 @@ const AgentEmlakSection = () => {
             <div className="absolute -top-4 left-4 z-10">
               <span className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs font-mono uppercase tracking-wider px-4 py-2 rounded-full">AI Video</span>
             </div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-card/50 bg-gradient-to-br from-cyan-50 to-blue-50 h-64 flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="w-16 h-16 rounded-full bg-cyan-100 flex items-center justify-center mx-auto mb-4">
-                  <Video className="w-8 h-8 text-cyan-600" />
-                </div>
-                <p className="text-sm font-medium text-foreground mb-1">Video Yakında</p>
-                <p className="text-xs text-muted-foreground">Emlak tanıtım videosu hazırlanıyor</p>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-card/50 flex items-center justify-center bg-black">
+              <video
+                src={agentEmlakVideo}
+                controls
+                playsInline
+                className="w-auto h-auto max-h-[500px] rounded-2xl"
+                style={{ aspectRatio: '9/16' }}
+              />
             </div>
           </div>
         </div>
