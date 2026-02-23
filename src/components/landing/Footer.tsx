@@ -39,10 +39,7 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 <span>info@agentasistan.com</span>
               </li>
-              <li className="flex items-center gap-2 text-gray-400 text-sm">
-                <Phone className="w-4 h-4" />
-                <span>+90 (850) 123 45 67</span>
-              </li>
+              {/* Telefon numarası şimdilik gizli */}
               <li className="flex items-center gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4" />
                 <span>İstanbul, Türkiye</span>
