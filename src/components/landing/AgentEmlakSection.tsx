@@ -1,5 +1,6 @@
 import React from 'react';
 import { Video, Clock, TrendingUp, Eye, Building2, Image } from 'lucide-react';
+import agentEmlakVideo from '@/assets/agent-emlak-tanitim.mp4';
 
 const AgentEmlakSection = () => {
   const beforeImage = "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&h=400&fit=crop";
